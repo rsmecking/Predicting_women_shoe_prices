@@ -44,7 +44,7 @@ dbc.themes.YETI
 """
 
 external_stylesheets = [
-    dbc.themes.BOOTSTRAP, # Bootswatch theme
+    dbc.themes.COSMO, # Cosmo theme
     'https://use.fontawesome.com/releases/v5.9.0/css/all.css', # for social media icons
 ]
 
@@ -52,7 +52,7 @@ meta_tags=[
     {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
 ]
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets, meta_tags=meta_tags)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.COSMO], meta_tags=meta_tags)
 app.config.suppress_callback_exceptions = True # see https://dash.plot.ly/urls
-app.title = 'YOUR APP NAME' # appears in browser title bar
+app.title = 'Shoe Price Predictor' # appears in browser title bar
 server = app.server

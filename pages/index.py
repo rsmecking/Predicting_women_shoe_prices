@@ -16,7 +16,7 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## Your Value Proposition
+            ## Shoe Price Prediction
 
             Emphasize how the app will benefit users. Don't emphasize the underlying technology.
 
@@ -30,6 +30,8 @@ column1 = dbc.Col(
     ],
     md=4,
 )
+
+         
 
 gapminder = px.data.gapminder()
 fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
