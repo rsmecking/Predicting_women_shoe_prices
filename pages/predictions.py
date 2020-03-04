@@ -230,6 +230,10 @@ def predict(brand, available,
             has_description]]
     )
     y_pred = pipeline.predict(df)[0]
-    return f'estimated price ${y_pred:.02f} '
+    if y_pred < 0:
+        y_pred = 0
+        return 'Shoes should have been free'
+    else:
+        return f'estimated price ${y_pred:.02f} '
 
 layout = dbc.Row([column1, column2])
