@@ -18,29 +18,34 @@ column1 = dbc.Col(
         
             ## Shoe Price Prediction
 
-            Emphasize how the app will benefit users. Don't emphasize the underlying technology.
+            🦶My passion for shoes is lackluster at best. I couldn't tell
+            you shoe price if my life depended on it.
 
-            ✅ RUN is a running app that adapts to your fitness levels and designs personalized workouts to help you improve your running.
+            👢This has really gone and bit me in the butt a few times.
+            My wife has a health appetite and is quick to destroy any
+            evidence as to the cost of her multitude of shoes. 
+    
 
-            ❌ RUN is the only intelligent running app that uses sophisticated deep neural net machine learning to make your run smarter because we believe in ML driven workouts.
+            👠This app is built specifically for individuals who may lack shoe 
+            knowledge that may be curious to roughly how expensive, specifically 
+            women shoes, given certain descriptive words.
 
             """
         ),
-        dcc.Link(dbc.Button('Your Call To Action', color='primary'), href='/predictions')
+        dcc.Link(dbc.Button('Price out shoes', color='primary'), href='/predictions')
     ],
     md=4,
 )
 
-         
-
-gapminder = px.data.gapminder()
-fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size="pop", color="continent",
-           hover_name="country", log_x=True, size_max=60)
 
 column2 = dbc.Col(
-    [
-        dcc.Graph(figure=fig),
-    ]
+      
+        dcc.Markdown(
+            """
+            [![](https://i.imgur.com/Ss0k2ye.gif)](https://www.youtube.com/watch?v=3HjIljJd-o0)
+            
+            """
+        )
 )
 
 layout = dbc.Row([column1, column2])
