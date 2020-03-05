@@ -52,7 +52,7 @@ meta_tags=[
     {'name': 'viewport', 'content': 'width=device-width, initial-scale=1'}
 ]
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG], meta_tags=meta_tags)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUX], meta_tags=meta_tags)
 app.config.suppress_callback_exceptions = True # see https://dash.plot.ly/urls
 app.title = 'Shoe Price Predictor' # appears in browser title bar
 server = app.server
