@@ -27,7 +27,7 @@ column1 = dbc.Col(
             This allows the more extreme prices to be evenly "weighted" or drawn out like it is shown in the 
             blue graph. 
 
-            ![](assets/Price_graphed.png)  ![](assets/Price_y_loged.png)            
+            ![](assets/Price_graphed.PNG)  ![](assets/Price_y_loged.PNG)            
 
             ##### Machine Learning Models
             I ran the data through a linear , random forest, and XGBoots regression ML pipelines.  
