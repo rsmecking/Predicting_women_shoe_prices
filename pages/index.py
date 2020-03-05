@@ -21,9 +21,9 @@ column1 = dbc.Col(
             🦶My passion for shoes is lackluster at best. I couldn't tell
             you shoe price if my life depended on it.
 
-            👢This has really gone and bit me in the butt a few times.
-            My wife has a health appetite and is quick to destroy any
-            evidence as to the cost of her multitude of shoes. 
+            👢This has really gone and bite me in the butt a few times.
+            My wife has a health appetite for shoes and is quick to destroy any
+            evidence linking cost to the shoes. 
     
 
             👠This app is built specifically for individuals who may lack shoe 
@@ -42,8 +42,9 @@ column2 = dbc.Col(
       
         dcc.Markdown(
             """
-            [![](https://i.imgur.com/Ss0k2ye.gif)](https://www.youtube.com/watch?v=3HjIljJd-o0)
+            [![](https://media.giphy.com/media/26tPpjJ7T6xCvWG76/giphy.gif)](https://www.youtube.com/watch?v=3HjIljJd-o0)
             
+            *(Link NSFW for Language)
             """
         )
 )
