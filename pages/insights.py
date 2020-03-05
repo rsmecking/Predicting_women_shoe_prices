@@ -25,14 +25,14 @@ column1 = dbc.Col(
            a large role in determining shoe price.
 
 
-           ![](assets/feature_importances.png)   
+           ![](assets/feature_importances.PNG)   
 
            #### SHAP 
            SHAP is a need little visualation to show how the features above effect the price of the shoe. The actual
            price of the shoe below is $33.99 and the model predicted it to be $36.29. Though off by $2.30, it still
            gives a fairly accurate representation of what that shoe cost is.
            
-           ![](assets/Shap_graph.png) 
+           ![](assets/Shap_graph.PNG) 
 
 
            
