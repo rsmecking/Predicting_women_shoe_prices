@@ -28,7 +28,7 @@ column1 = dbc.Col(
            ![](assets/feature_importances.PNG)   
 
            #### SHAP 
-           SHAP is a need little visualation to show how the features above affect the price of the shoe. The actual
+           SHAP is a neat little visualization tool to show how the features above affect the price of the shoe. The actual
            price of the shoe below is $33.99 and the model predicted it to be $36.29. Though off by $2.30, it still
            gives a fairly accurate representation of what that shoe cost is.
            
