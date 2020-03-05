@@ -23,23 +23,14 @@ column1 = dbc.Col(
         
             ## Predictions
 
-            Your instructions: How to use your app to get new predictions.
+            Select a few options that may apply to the shoes.
+            The average shoe price is the starting point. 
+
+            *You will be able to make up shoes(Open toed boot.)
 
             """
         ),
-
-        # html.Div([
-        #         dcc.Markdown("Description Length of Shoe"),
-        #         dcc.Slider(
-        #             id='slide',
-        #             min=0,
-        #             max=118,
-        #             step=2,
-        #             value=60,
-        #             marks={n: f'{n:.0f}'for n in range(0,118,10)}
-        #         ),          
-        #  ]),
-                  
+  
         dcc.Dropdown(
             id='brand', 
                 options = [
@@ -99,7 +90,7 @@ column1 = dbc.Col(
                     value='1',
                     labelStyle={'display': 'inline-block'}
 		    )
-		]),
+		]), 
 
         html.Div([
 			    dcc.Markdown("Was shipping free?"),
@@ -112,6 +103,16 @@ column1 = dbc.Col(
                     labelStyle={'display': 'inline-block'}
 		    )
 		]),
+
+
+
+    ],
+)
+
+
+column2 = dbc.Col(
+    [
+        
 
         html.Div([
 			    dcc.Markdown("Does shoe have heel?"),
@@ -136,6 +137,8 @@ column1 = dbc.Col(
                     labelStyle={'display': 'inline-block'}
 		    )
 		]),
+
+
 
         html.Div([
 			    dcc.Markdown("Is the bottom flat?"),
@@ -196,13 +199,16 @@ column1 = dbc.Col(
                     labelStyle={'display': 'inline-block'}
 		    )
 		]),
+
+
+    ]
+)
+        
        
 
-    ],
-    md=4,
-)
 
-column2 = dbc.Col(
+
+column3 = dbc.Col(
     [
         html.H2('Estimated Price of Shoes', className='mb-5'), 
         html.Div(id='prediction-content', className='lead')       
@@ -248,4 +254,4 @@ def predict(brand, available,
       # else:
     #     return html.Img(src='assets/run_image.jpeg',className='img-fluid', style = {'height': '400px'})
 
-layout = dbc.Row([column1, column2])
+layout = dbc.Row([column1, column2, column3])
