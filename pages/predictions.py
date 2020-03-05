@@ -47,7 +47,16 @@ column1 = dbc.Col(
                     {'label': 'Propet', 'value': 'propet'},
                     {'label': 'SAS', 'value': 'sas'}, 
                     {'label': 'Trotters', 'value': 'trotters'}, 
-                    {'label': 'Pleaser', 'value': 'pleaser'}, 
+                    {'label': 'Pleaser', 'value': 'pleaser'},
+                    {'label': 'Soda', 'value': 'soda'},
+                    {'label': 'Spring Step', 'value': 'spring'},
+                    {'label': 'Aerosoles', 'value': 'aerosoles'}, 
+                    {'label': 'Softwalk', 'value': 'softwalk'},
+                    {'label': "L'Artiste", 'value': "l'artiste"},
+                    {'label': 'Ellie Shoes', 'value': 'ellie'},
+                    {'label': 'Drew', 'value': 'drew'},
+                    {'label': 'Steve Madden', 'value': 'madden'},
+                    {'label': "New Balance", 'value': "new"},      
                 ], 
                 placeholder="Select a Brand",
                 value = 'Brand', 
@@ -64,6 +73,7 @@ column1 = dbc.Col(
                         {'label': 'No', 'value': '1'}],
                     value='1',
                     labelStyle={'display': 'inline-block'}
+                    
 		    )
 		]),
 
@@ -132,8 +142,8 @@ column1 = dbc.Col(
 			    dcc.RadioItems(
                     id='is_flat',
                     options=[
-                        {'label': 'Yes', 'value': '0'},
-                        {'label': 'No', 'value': '1'}],
+                        {'label': 'Yes', 'value': '1'},
+                        {'label': 'No', 'value': '0'}],
                     value='1',
                     labelStyle={'display': 'inline-block'}
 		    )
@@ -180,8 +190,8 @@ column1 = dbc.Col(
 			    dcc.RadioItems(
                     id='has_description',
                     options=[
-                        {'label': 'Yes', 'value': '0'},
-                        {'label': 'No', 'value': '1'}],
+                        {'label': 'Yes', 'value': '1'},
+                        {'label': 'No', 'value': '0'}],
                     value='1',
                     labelStyle={'display': 'inline-block'}
 		    )
@@ -232,8 +242,10 @@ def predict(brand, available,
     y_pred = pipeline.predict(df)[0]
     if y_pred < 0:
         y_pred = 0
-        return 'Shoes should have been free'
+        return html.Img(src='https://media.giphy.com/media/7WqNJ99pmPIAM/giphy.gif')        
     else:
-        return f'estimated price ${y_pred:.02f} '
+        return f'Estimated price ${y_pred:.02f} '
+      # else:
+    #     return html.Img(src='assets/run_image.jpeg',className='img-fluid', style = {'height': '400px'})
 
 layout = dbc.Row([column1, column2])
