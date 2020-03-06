@@ -47,7 +47,9 @@ column1 = dbc.Col(
                     {'label': 'Ellie Shoes', 'value': 'ellie'},
                     {'label': 'Drew', 'value': 'drew'},
                     {'label': 'Steve Madden', 'value': 'madden'},
-                    {'label': "New Balance", 'value': "new"},      
+                    {'label': "New Balance", 'value': "new"},
+                    {'label': "Toms", 'value': "tom"},
+                    {'label': "Other", 'value': "other"},      
                 ], 
                 placeholder="Select a Brand",
                 value = 'Brand', 
@@ -248,7 +250,7 @@ def predict(brand, available,
     y_pred = pipeline.predict(df)[0]
     if y_pred < 0:
         y_pred = 0
-        return html.Img(src='https://media.giphy.com/media/7WqNJ99pmPIAM/giphy.gif')        
+        return html.Img(src='https://media.giphy.com/media/7WqNJ99pmPIAM/giphy.gif'), ('Eww, These shoes suck!')
     else:
         return f'Estimated price ${y_pred:.02f} '
       # else:
