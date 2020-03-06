@@ -1,4 +1,5 @@
-https://women-shoe-price-predictor.herokuapp.com/
+https://women-shoe-price-predictor.herokuapp.com
+
 This is small app build to predict shoe prices. Unfortunately I could not find any shoes in the real world to compair.
 I did however ask my wife rough estimates of shoes and she was reluctant to confirmed they were fairly accurate. 
 
