@@ -18,16 +18,15 @@ column1 = dbc.Col(
             ### Insights
 
            For usability in the app, I only took the top 12 most practical features from a process 
-           called permutation importance. For readability I created an eli5 (Explain like I’m 5) 
-           chart shown below. The features were designed to incorporate a list of descriptive words 
-           and create binary (True/False) columns for the learning models to interpret. For example, 
-           'has_heel' feature is any shoe that may have a heel. Though this isn't very specific, but 
-           you can see below, heels do not play a large role in determining shoe price. 
+           called permutation importance. The chart on the left shows the results of that process. For 
+           readability I created an eli5 (Explain like I’m 5) chart shown on the right. The features 
+           were designed to incorporate a list of descriptive words and create binary (True/False) 
+           columns for the learning models to interpret. For example, 'has_heel' feature is any shoe 
+           that may have a heel. Though this isn't very specific, but you can see below, heels do 
+           not play a large role in determining shoe price. 
 
-
-
-           ![](assets/feature_importances.PNG)   
-
+           ![](assets/without_eli5.PNG)   ![](assets/feature_importances.PNG)   
+             
            #### SHAP 
            SHAP is a neat little visualization tool to show how the features above affect the price of 
            the shoe. The actual price of the shoe below is $33.99 and the model predicted it to be $36.29. 
