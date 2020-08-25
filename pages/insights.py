@@ -30,7 +30,7 @@ column1 = dbc.Col(
            #### SHAP 
            SHAP is a neat little visualization tool to show how the features above affect the price of 
            the shoe. The actual price of the shoe below is $33.99 and the model predicted it to be $36.29. 
-           Though off by $2.30, it still gives a fairly accurate representation of what that shoe cost is. 
+           Though off by $2.70, it still gives a fairly accurate representation of what that shoe cost is. 
            It shows that ‘brand’ has the most significant effect on price, followed by being purchased online. 
            This has the largest price change but isn’t the strongest contributor machine learning algorithms.
            I used the SHAP graph to visually understand how effective my features were, in contributing to price
