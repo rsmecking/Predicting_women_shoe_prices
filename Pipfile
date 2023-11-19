@@ -17,4 +17,4 @@ category-encoders = "==2.1.0"
 xgboost = "==0.90"
 
 [requires]
-python_version = "3.8.18"
+python_version = "3.8"
