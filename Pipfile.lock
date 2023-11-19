@@ -3,7 +3,7 @@
         "hash": {
             "sha256": "be1d5f1532890ae335a2a70627ec27e9a34bf484e7a56eb8feb27f863e6d5201"
         },
-        "pipfile-spec": 6,
+        "pipfile-spec": 8,
         "requires": {
             "python_version": "3"
         },
